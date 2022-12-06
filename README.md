@@ -1,1 +1,1 @@
-https://serjKitel.github.io/rsschool-cv/cv
+https://serjKitel.github.io/rsschool-cv/cvd
