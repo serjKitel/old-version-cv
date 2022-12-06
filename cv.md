@@ -22,3 +22,14 @@ function hello() {
 
 hello();
 ```
+****
+## Experience
+Professional education in [Rs School](https://rs.school/).
+*****
+## Education
+Minsk State Linguistic University
+****
+## Languages
++ English B2 (Minsk State Linguistic University)
++ German A2 (Minsk gymnasium №146)
+
