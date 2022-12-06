@@ -13,3 +13,12 @@ My name is Sergei. I have been working in sales and marketing for many years and
 + CSS
 + JavaScript
 + Git/Github
+*****
+## Code Example
+```javascript
+function hello() {
+    alert('Hello World!');
+}
+
+hello();
+```
