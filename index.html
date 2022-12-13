@@ -22,11 +22,11 @@
                     <div class="header__blocks">
                         <nav class="nav">
                             <ul class="nav__list">
-                                <li><a class="nav__link active" href="#">About</a></li>
-                                <li><a class="nav__link" href="#">Education</a></li>
-                                <li><a class="nav__link" href="#">Skills</a></li>
-                                <li><a class="nav__link" href="#">Code</a></li>
-                                <li><a class="nav__link" href="#">Contacts</a></li>
+                                <li><a class="nav__link" href="#" data-scroll="#about">About</a></li>
+                                <li><a class="nav__link" href="#" data-scroll="#education">Education</a></li>
+                                <li><a class="nav__link" href="#" data-scroll="#skills">Skills</a></li>
+                                <li><a class="nav__link" href="#" data-scroll="#code">Code</a></li>
+                                <li><a class="nav__link" href="#" data-scroll="#contacts">Contacts</a></li>
                             </ul>
                         </nav>
                         <div class="header__info">
@@ -48,7 +48,7 @@
         <div class="container">
             <div class="main__container">
                 <aside>
-                    <section class="education">
+                    <section class="education" id="education">
                         <h3 class="side__header">
                             Education
                         </h3>
@@ -68,7 +68,7 @@
                             </div>
                         </div>
                     </section>
-                    <section class="skills">
+                    <section class="skills" id="skills">
                         <h3 class="side__header2">
                             Skills
                         </h3>
@@ -80,7 +80,7 @@
                             <li class="skill__item skill__github">GitHub</li>
                         </ul>
                     </section>
-                    <section class="contacts">
+                    <section class="contacts" id="contacts">
                         <h3 class="side__header3">
                             Contacts
                         </h3>
@@ -95,7 +95,7 @@
                     </section>
                 </aside>
                 <div class="main__content">
-                    <section class="main__about">
+                    <section class="main__about" id="about">
                         <h3 class="main__header">
                             About me
                         </h3>
@@ -138,7 +138,7 @@
                             </li>
                         </ul>
                     </section>
-                    <section class="main__code">
+                    <section class="main__code" id="code">
                         <div class="code__img">
                             <img src="./assets/icons/code.png" alt="code">
                         </div>
@@ -188,6 +188,8 @@
     <script src="./scripts/three.min.js"></script>
     <script src="./scripts/vanta.birds.min.js"></script>
     <script src="./scripts/app.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="./scripts/jquery.js"></script>
 
 
 </body>
