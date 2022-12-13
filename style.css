@@ -21,15 +21,19 @@ h6 {
     margin: 0;
 }
 
+
 /* Container */
+
 .container {
-    width: 100%;
     max-width: 1200px;
+    width: 100%;
     margin: 0 auto;
     background-color: #000;
 }
 
+
 /* Header */
+
 .header {
     width: 100%;
 }
@@ -37,13 +41,11 @@ h6 {
 .header__container {
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 
 .header__photo {
     width: 400px;
     height: 597px;
-
 }
 
 .header__info {
@@ -51,53 +53,54 @@ h6 {
 }
 
 .header__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 800px;
     height: 597px;
+
+}
+
+.header__blocks {
+    padding-right: 60px;
 }
 
 .header__title,
 .header__subtitle {
+    margin: 0px auto;
     text-align: end;
-    padding-right: 30px;
     color: #fff;
-    margin: 100px;
+
 }
 
+
 /* Nav */
+
 .nav {
-    font-size: 20px;
     text-transform: uppercase;
-    padding-top: 100px;
-    padding-left: 100px;
-    display: flex;
-    justify-content: end;
-    display: inline-block;
 }
 
 .nav__list {
-    /* vertical-align: top;
-    position: relative; */
     display: flex;
     justify-content: end;
     list-style: none;
 }
 
 .nav__link {
+    position: relative;
     display: inline-block;
-    vertical-align: top;
     margin: 0 10px;
     color: #fff;
     text-decoration: none;
-    position: relative;
 }
 
 .nav__link:after {
-    content: "";
+    position: absolute;
     display: block;
     width: 100%;
     height: 3px;
+    content: "";
     background-color: #fff;
-    position: absolute;
     opacity: 0;
     transition: opacity 1s;
 }
@@ -115,7 +118,9 @@ h6 {
     font-weight: bold;
 }
 
+
 /* Main aside */
+
 .main {
     padding: 0;
 }
@@ -126,48 +131,47 @@ h6 {
     background: linear-gradient(45deg, black, white);
 }
 
-.education {
+.education,
+.skills,
+.contacts {
     padding: 20px 0;
-    /* border-bottom: 3px solid #fff; */
     width: 100%;
     overflow: hidden;
 }
 
 aside {
-    width: 33.33333%;
+    width: 33.33%;
 }
 
-.education__hover {
-    /* overflow: hidden; */
-    /* position: relative; */
-}
-
-
-.side__header {
-    color: #333;
+.side__header,
+.side__header2,
+.side__header3 {
     padding: 0 20px;
-    /* transition: all ease 1s; */
+    color: #333;
 }
 
-/* .education:hover {
-    color: #fff;
-} */
-
-.education__underline {
+.education__underline,
+.skills__underline,
+.contacts__underline {
+    position: relative;
     width: 399px;
     height: 5px;
-    background-color: #333;
-    position: fixed;
     left: -380px;
+    background-color: #333;
     transition: all ease 1s;
-    position: relative;
 }
 
 .education__block {
     padding: 20px 20px;
 }
 
-.education__title, .education__describe, .education__RS, .education__stage, .side__header {
+.education__title,
+.education__describe,
+.education__RS,
+.education__stage,
+.side__header,
+.side__header2,
+.side__header3 {
     transition: all ease 1s;
 }
 
@@ -181,51 +185,28 @@ aside {
     border-bottom: 1px solid #fff;
 }
 
+
 /* Skills */
 
-.skills, .contacts {
-    padding: 20px 0;
-    overflow: hidden;
-}
-
-.side__header2, .side__header3 {
-    color: #333;
-    padding: 0 20px;
-}
-
-.side__header2, .side__header3 {
-    transition: all ease 1s;
-}
-
-.skills__underline, .contacts__underline {
-    width: 399px;
-    height: 5px;
-    background-color: #333;
-    position: fixed;
-    left: -380px;
-    transition: all ease 1s;
-    position: relative;
-}
-
-.skills__list, .contacts__list {
+.skills__list,
+.contacts__list {
     list-style: none;
     transition: all ease 1s;
-    /* padding: 0;
-    color: #fecb00; */
-    /* line-height: 35px; */
-  }
+}
 
-  .skill__item, .contact__item {
+.skill__item,
+.contact__item {
     margin-bottom: 10px;
     padding-bottom: 5px;
-  }
+}
 
-  .skills__list li, .contacts__list li {
+.skills__list li,
+.contacts__list li {
     padding-left: 40px;
     background-repeat: no-repeat;
     background-size: 30px;
     background-position: left center;
-  }
+}
 
 .skill__html {
     background-image: url("./assets/icons/html.png");
@@ -233,7 +214,7 @@ aside {
 
 .skill__css {
     background-image: url("./assets/icons/css.png");
-}  
+}
 
 .skill__javascript {
     background-image: url("./assets/icons/js.png");
@@ -264,54 +245,26 @@ aside {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Main content */
 /* About */
+
 .main__content {
     padding: 20px 20px;
 }
 
-.main__header {
+.main__header,
+.main__header2,
+.main__header3,
+.main__header4 {
     padding: 0 20px;
     color: #808080;
     transition: all ease 1s;
 }
 
-.main__header2, .main__header3, .main__header4 {
-    padding: 0 20px;
-    color: #808080;
-    transition: all ease 1s;
-}
-
+.main__header3,
 .main__header4 {
     padding-top: 20px;
 }
-
-.main__header3 {
-    padding-top: 20px;
-}
-
 
 .main__about {
     padding: 0 20px 20px 20px;
@@ -324,9 +277,10 @@ aside {
 }
 
 .lang__list {
+    margin: 0 auto;
     color: #808080;
     transition: all ease 1s;
-    margin: 0 auto;
+
 }
 
 .block__cv {
@@ -336,16 +290,18 @@ aside {
 }
 
 .cv__link {
-    transition: all ease 1s;
     padding: 20px 280px 0 0;
     color: #808080;
+    transition: all ease 1s;
 }
 
 .hobbies__list li {
     display: inline-block;
 }
 
+
 /* Code */
+
 .code__img {
     display: flex;
     justify-content: end;
@@ -355,6 +311,7 @@ aside {
 .code__example {
     padding: 0 20px 20px 200px;
 }
+
 .main__header5 {
     padding: 0 20px;
     color: #000;
@@ -369,11 +326,12 @@ aside {
     color: #fff;
 }
 
+
 /* Footer */
 
 .footer__container {
-   background: linear-gradient(45deg, black, white);
-   padding: 20px 222px;
+    background: linear-gradient(45deg, black, white);
+    padding: 20px 222px;
 }
 
 .rs__school {
